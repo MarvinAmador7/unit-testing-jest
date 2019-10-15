@@ -1,23 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { FavoriteNumber } from './FavoriteNumber';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <FavoriteNumber min={10} max={20} />
       </header>
     </div>
   );
